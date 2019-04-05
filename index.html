@@ -22,16 +22,20 @@
             // Values at even indices (0, 2, 4, ...) specify vibrations, while the odd
             // indices specify pauses.
             // Vibrate for 500ms 6 times, pausing for 250ms in between each one.
-          while (alex) {
-            navigator.vibrate([50, 411.5, 50, 411.5, 50, 411.5]);// 50, 411.5, 50, 411.5, 50, 411.5, 50, 411.5]);
-          }
+            seq = [50, 411.5, 50, 411.5, 50, 411.5]);// 50, 411.5, 50, 411.5, 50, 411.5, 50, 411.5];
+            i=0;
+            while(i<20) {
+                seq = seq + seq;
+                i = i+1;
+            }
+            navigator.vibrate();
       }
       
       function stopVibrations() {
       // You can also stop an ongoing vibration pattern by specifying a vibration
       // length of zero.
           alex = false
-//       navigator.vibrate(0);
+      navigator.vibrate(0);
 }
 </script>
     
