@@ -23,5 +23,12 @@
           }
           </script>
           <div><button onclick="startPattern()">Play pattern</button></div>
+    <script>function stopVibrations() {
+  // You can also stop an ongoing vibration pattern by specifying a vibration
+  // length of zero.
+  navigator.vibrate(0);
+}
+</script>
+    <div><button onclick="stopVibrations()">Stop vibrations</button></div>
 </body>
 </html>
