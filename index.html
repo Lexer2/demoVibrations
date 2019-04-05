@@ -16,9 +16,7 @@
 <body>
     <h1>This site is generating vibrations on your phone while you watching the eurovision</h1>
     <script>
-        alex = false
       function startPattern() {
-          alex = true
             // Values at even indices (0, 2, 4, ...) specify vibrations, while the odd
             // indices specify pauses.
             // Vibrate for 500ms 6 times, pausing for 250ms in between each one.
@@ -34,9 +32,8 @@
       function stopVibrations() {
       // You can also stop an ongoing vibration pattern by specifying a vibration
       // length of zero.
-          alex = false
-      navigator.vibrate(0);
-}
+        navigator.vibrate(0);
+      }
 </script>
     
     <div><button onclick="startPattern()">Play pattern</button></div>
