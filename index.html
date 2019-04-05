@@ -14,17 +14,14 @@
       </script>
 </head>
 <body>
-    <h1>This site is generating vibrations on your phone while you watching the eurovision</h1>
-    <script>
-      function startPattern() {
+    <h1>This site is generating a vibrations on your phone while you watching the eurovision</h1>
+    <script>function startPattern() {
             // Values at even indices (0, 2, 4, ...) specify vibrations, while the odd
             // indices specify pauses.
             // Vibrate for 500ms 6 times, pausing for 250ms in between each one.
-            seq = [50, 411, 50, 411, 50, 411, 50, 411, 50, 411, 50, 411, 50, 411];
-            navigator.vibrate();
-      }
-</script>
-    
-    <div><button onclick="startPattern()">Play pattern</button></div>
+            navigator.vibrate([50, 411, 50, 411, 50, 411, 50, 411, 50, 411, 50]);
+          }
+          </script>
+          <div><button onclick="startPattern()">Play pattern</button></div>
 </body>
 </html>
